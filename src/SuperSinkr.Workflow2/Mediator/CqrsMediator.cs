@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace SuperSinkr.Workflow.Mediator
+namespace SuperSinkr.Workflow2.Mediator
 {
     public class CqrsMediator : ICqrsMediator
     {

@@ -1,4 +1,4 @@
-using SuperSinkr.Workflow.Mediator;
+
 
 namespace SuperSinkr.Tests
 {
@@ -7,7 +7,7 @@ namespace SuperSinkr.Tests
         [Fact]
         public void Test1()
         {
-            var mediator = new CqrsMediator()
+           // var mediator = new CqrsMediator()
         }
     }
 }

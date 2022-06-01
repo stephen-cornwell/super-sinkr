@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperSinkr.Workflow
 {
-    public interface IConfigurable<in TConfiguration>
+    internal class Processor
     {
-        void Configure(TConfiguration config);
     }
 }

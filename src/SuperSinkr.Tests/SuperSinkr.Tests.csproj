@@ -21,8 +21,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SuperSinkr.Workflow\SuperSinkr.Workflow.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace SuperSinkr.Workflow.Workflow;
+﻿namespace SuperSinkr.Workflow2.Workflow;
 
 public interface ISyncOutput
 {

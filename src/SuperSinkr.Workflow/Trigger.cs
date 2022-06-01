@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperSinkr.Workflow
 {
-    public class SyncTriggeredHandler
+    internal class Trigger
     {
-        public void Handle(SyncSession session)
-        {
-
-        }
     }
 }

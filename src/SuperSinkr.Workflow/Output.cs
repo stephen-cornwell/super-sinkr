@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperSinkr.Workflow
 {
-    public class SyncSession
+    internal class Output
     {
-        public Guid Id { get; set; }
-        public List<SyncFile> Files { get; set; }
     }
 }

@@ -1,7 +1,7 @@
-﻿using SuperSinkr.Workflow.Mediator;
-using SuperSinkr.Workflow.Workflow.Inputs;
+﻿using SuperSinkr.Workflow2.Mediator;
+using SuperSinkr.Workflow2.Workflow.Inputs;
 
-namespace SuperSinkr.Workflow.Workflow;
+namespace SuperSinkr.Workflow2.Workflow;
 
 // Workflow - the configuration
 // Session - a set of instances of inputs, processors and outputs to be executed
@@ -10,7 +10,7 @@ namespace SuperSinkr.Workflow.Workflow;
 public interface ISyncWorkflow
 {
     public ISyncInput Input { get; }
-    public IProcessingPipeline Pipeline { get; }
+   // public IProcessingPipeline Pipeline { get; }
     public ISyncOutput Output { get; }
 }
 
@@ -32,13 +32,15 @@ public class SyncWorkflow : ISyncWorkflow
         _mediator = mediator;
     }
 
-    public async Task Start()
+    public async Task StartSession()
     {
+        var session = new SyncSession();
+
         // Create and configure input(s) and triggers
         var inputConfig = new FolderSyncInputConfig();
         inputConfig.Folder = "c:\\temp\\super-sync\\input";
         
-        Input = new FolderSyncInput(inputConfig);
+        //Input = new FolderSyncInput(inputConfig);
         // Create and configure processors (processing pipeline).
 
        // Pipeline = new ProcessingPipeline()
@@ -48,7 +50,7 @@ public class SyncWorkflow : ISyncWorkflow
 
         // Start triggers.
 
-        await Input.StartMonitoring();
+        //await Input.StartMonitoring();
     }
 
 }
@@ -57,7 +59,7 @@ public static class SyncWorkflowExtensions
 {
     public static SyncWorkflow AddInput(this SyncWorkflow workflow, Action<FolderSyncInputConfig> options)
     {
-        options.Invoke();
+        //options.Invoke();
 
         return workflow;
     }

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace SuperSinkr.Workflow.Workflow.Processors;
+namespace SuperSinkr.Workflow2.Workflow.Processors;
 
 public class DummySyncProcessor : ISyncProcessor
 {

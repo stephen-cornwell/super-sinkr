@@ -1,6 +1,6 @@
-﻿using SuperSinkr.Workflow.Mediator;
+﻿using SuperSinkr.Workflow2.Mediator;
 
-namespace SuperSinkr.Workflow.Workflow.Inputs;
+namespace SuperSinkr.Workflow2.Workflow.Inputs;
 
 public class FolderSyncInput : ISyncInput
 {

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SuperSinkr.Workflow.Mediator;
-
-namespace SuperSinkr.Workflow.Workflow.Outputs
+﻿namespace SuperSinkr.Workflow2.Workflow.Outputs
 {
     public class FolderSyncOutputConfig
     {

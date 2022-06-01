@@ -1,7 +1,6 @@
-﻿using SuperSinkr.Workflow.Mediator;
-using SuperSinkr.Workflow.Workflow.Processors;
+﻿using SuperSinkr.Workflow2.Workflow.Processors;
 
-namespace SuperSinkr.Workflow.Workflow;
+namespace SuperSinkr.Workflow2.Workflow;
 
 /// <summary>
 /// Possible processors:
